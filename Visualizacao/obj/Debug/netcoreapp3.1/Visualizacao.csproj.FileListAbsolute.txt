@@ -1,0 +1,17 @@
+C:\Users\Rodnei\backup HD FG 01_08_21\Rodnei\OneDriveeletrodnei\C# projetos\AulasCursoEmVideo\Visualizacao\bin\Debug\netcoreapp3.1\Visualizacao.exe
+C:\Users\Rodnei\backup HD FG 01_08_21\Rodnei\OneDriveeletrodnei\C# projetos\AulasCursoEmVideo\Visualizacao\bin\Debug\netcoreapp3.1\Visualizacao.deps.json
+C:\Users\Rodnei\backup HD FG 01_08_21\Rodnei\OneDriveeletrodnei\C# projetos\AulasCursoEmVideo\Visualizacao\bin\Debug\netcoreapp3.1\Visualizacao.runtimeconfig.json
+C:\Users\Rodnei\backup HD FG 01_08_21\Rodnei\OneDriveeletrodnei\C# projetos\AulasCursoEmVideo\Visualizacao\bin\Debug\netcoreapp3.1\Visualizacao.runtimeconfig.dev.json
+C:\Users\Rodnei\backup HD FG 01_08_21\Rodnei\OneDriveeletrodnei\C# projetos\AulasCursoEmVideo\Visualizacao\bin\Debug\netcoreapp3.1\Visualizacao.dll
+C:\Users\Rodnei\backup HD FG 01_08_21\Rodnei\OneDriveeletrodnei\C# projetos\AulasCursoEmVideo\Visualizacao\bin\Debug\netcoreapp3.1\Visualizacao.pdb
+C:\Users\Rodnei\backup HD FG 01_08_21\Rodnei\OneDriveeletrodnei\C# projetos\AulasCursoEmVideo\Visualizacao\bin\Debug\netcoreapp3.1\Caelum.Stella.CSharp.dll
+C:\Users\Rodnei\backup HD FG 01_08_21\Rodnei\OneDriveeletrodnei\C# projetos\AulasCursoEmVideo\Visualizacao\bin\Debug\netcoreapp3.1\Caelum.Stella.CSharp.pdb
+C:\Users\Rodnei\backup HD FG 01_08_21\Rodnei\OneDriveeletrodnei\C# projetos\AulasCursoEmVideo\Visualizacao\obj\Debug\netcoreapp3.1\Visualizacao.csproj.AssemblyReference.cache
+C:\Users\Rodnei\backup HD FG 01_08_21\Rodnei\OneDriveeletrodnei\C# projetos\AulasCursoEmVideo\Visualizacao\obj\Debug\netcoreapp3.1\Visualizacao.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Rodnei\backup HD FG 01_08_21\Rodnei\OneDriveeletrodnei\C# projetos\AulasCursoEmVideo\Visualizacao\obj\Debug\netcoreapp3.1\Visualizacao.AssemblyInfoInputs.cache
+C:\Users\Rodnei\backup HD FG 01_08_21\Rodnei\OneDriveeletrodnei\C# projetos\AulasCursoEmVideo\Visualizacao\obj\Debug\netcoreapp3.1\Visualizacao.AssemblyInfo.cs
+C:\Users\Rodnei\backup HD FG 01_08_21\Rodnei\OneDriveeletrodnei\C# projetos\AulasCursoEmVideo\Visualizacao\obj\Debug\netcoreapp3.1\Visualizacao.csproj.CoreCompileInputs.cache
+C:\Users\Rodnei\backup HD FG 01_08_21\Rodnei\OneDriveeletrodnei\C# projetos\AulasCursoEmVideo\Visualizacao\obj\Debug\netcoreapp3.1\Visualizacao.csproj.CopyComplete
+C:\Users\Rodnei\backup HD FG 01_08_21\Rodnei\OneDriveeletrodnei\C# projetos\AulasCursoEmVideo\Visualizacao\obj\Debug\netcoreapp3.1\Visualizacao.dll
+C:\Users\Rodnei\backup HD FG 01_08_21\Rodnei\OneDriveeletrodnei\C# projetos\AulasCursoEmVideo\Visualizacao\obj\Debug\netcoreapp3.1\Visualizacao.pdb
+C:\Users\Rodnei\backup HD FG 01_08_21\Rodnei\OneDriveeletrodnei\C# projetos\AulasCursoEmVideo\Visualizacao\obj\Debug\netcoreapp3.1\Visualizacao.genruntimeconfig.cache
