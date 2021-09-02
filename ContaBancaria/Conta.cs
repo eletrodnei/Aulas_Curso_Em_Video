@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ContaBancaria
 {
-    class Conta
+    public class Conta
     {
         private int NumConta;
         private string Tipo;
@@ -13,42 +13,45 @@ namespace ContaBancaria
         private Boolean Status;
 
         public int NumConta1 { get => NumConta; set => NumConta = value; }
-        protected string Tipo1 { get => Tipo; set => Tipo = value; }
+        public string Tipo1 { get => Tipo; set => Tipo = value; }
         public string Dono1 { get => Dono; set => Dono = value; }
         public decimal Saldo1 { get => Saldo; set => Saldo = value; }
         public Boolean Status1 { get => Status; set => Status = value; }
 
         
 
-        public void AbrirConta(string dono,string tipo,List<Conta> lista)
+        public void AbrirConta(int numero,string dono,string tipo)
         {
             this.Saldo1 = 0;
             this.Status1 = true;
-            this.Tipo1 = tipo;
+            this.NumConta1 = numero;
             this.Dono1 = dono;
+            this.Tipo1 = tipo;
             
+            
+            
+            //random number = new random();
+            //int numero = number.next(5) + 1;
+            //boolean existe = true;
+            //conta nova = new conta();
+            //lista.add(nova);
+            //for (int c = 0; c < lista.count; c++)
+            //{
+            //    if (numero != lista[c].numconta1)
+            //    {
+            //        existe = false;
+            //    }
+            //    else
+            //    {
+            //        existe = true;
+            //        break;
+            //    }
+            //}
+            //int numero=Utils.GerarNumero();
+            //Boolean Existe = Utils.VerificarNumero(numero, lista);
 
 
-            Random number = new Random();
-            int Numero = number.Next(5)+1;
-            Boolean Existe = true;
-            Conta nova = new Conta();
-            lista.Add(nova);
-            for (int c = 0; c < lista.Count; c++)
-            {
-                if (Numero != lista[c].NumConta1)
-                {
-                    Existe = false;
-                }
-                else
-                {
-                    Existe = true;
-                    break;
-                }
-            }
-            if (!Existe)
-            {
-                if (tipo == "CP")
+            if (tipo == "CP")
                 {
                     Saldo = 20;
                 }
@@ -56,18 +59,24 @@ namespace ContaBancaria
                 {
                     Saldo = 10;
                 }
-                nova.NumConta = Numero;
-                nova.Dono = this.Dono;
-                nova.Tipo = this.Tipo;
-                nova.Saldo = this.Saldo;
-                nova.Status = this.Status;
-            }
-            else
-            {
-                Console.WriteLine("Essa conta já existe !!");
-                lista.Remove(nova);
-                Console.Beep(); Console.Beep(); Console.Beep();
-            }
+                
+                //lista[0].NumConta = numero;
+                //lista[0].Dono = this.Dono;
+                //lista[0].Tipo = this.Tipo;
+                //lista[0].Saldo = this.Saldo;
+                //lista[0].Status = this.Status;
+                //nova.NumConta = Numero;
+                //nova.Dono = this.Dono;
+                //nova.Tipo = this.Tipo;
+                //nova.Saldo = this.Saldo;
+                //nova.Status = this.Status;
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Essa conta já existe !!");
+            //    //lista.Remove(nova);
+            //    Console.Beep(); Console.Beep(); Console.Beep();
+            //}
         }
         
 
