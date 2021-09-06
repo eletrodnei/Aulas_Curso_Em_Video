@@ -14,45 +14,42 @@ namespace ContaBancaria
             return resultado;
         }
 
+        
+
         public static Boolean VerificarNumero(int numero, List<Conta> lista)
         {
             Boolean Exist = false;
-            
-            
             for (int c = 0; c < lista.Count; c++)
             {
                 if (numero != lista[c].NumConta1)
                 {
                     Exist = false;
-                    
                 }
                 else
                 {
                     Exist = true;
-                    
                     break;
                 }
-
             }
             return Exist;
         }
+
+
         public static void Menu(List<Conta> lista)
         {
-            int Menu = 6;
-
-            while (Menu != 5)
+            int Menu = 7;
+            while (Menu != 6)
             {
                 try
                 {
                     Menu = 6;
                     Console.WriteLine("Banco Itaú");
                     Console.WriteLine("O que deseja fazer?");
-                    Console.WriteLine("1 - abrir conta, 2 - fechar conta, 3 - depositar, 4 - sacar , 5- Sair");
+                    Console.WriteLine("1 - abrir conta, 2 - fechar conta, 3 - consultar conta, 4 - sacar , 5 - depositar 6- Sair");
                     Menu = Convert.ToInt32(Console.ReadLine());
                     Console.Clear();
                 }
                 catch (Exception ex)
-
                 {
                     Console.WriteLine("Caracter inválido !!", ex.Message);
                     Console.Beep();
@@ -61,8 +58,6 @@ namespace ContaBancaria
                     Thread.Sleep(3000);
                     Console.Clear();
                 }
-
-
                 switch (Menu)
                 {
                     case 1:
@@ -85,30 +80,90 @@ namespace ContaBancaria
                             {
                                 numero = Utils.GerarNumero();
                                 Existe = Utils.VerificarNumero(numero, lista);
-
                             }
                             string[] data = Inicio();
                             conta.AbrirConta(numero, data[0], data[1]);
-                            Console.WriteLine("Conta criada com sucesso !!");
+                            Console.WriteLine("Conta criada com sucesso !!\n");
+                            Console.WriteLine(conta.ToString());
                             Console.Beep();
                             Thread.Sleep(3000);
                             Console.Clear();
                             break;
                         }
-
                     case 2:
+                        Conta fconta = new Conta();
+                        fconta.FecharConta(lista);
                         // código 2
                         break;
                     case 3:
-                        // código 2
+                        Conta cconta = new Conta();
+                        Console.WriteLine("Digite o Numero da conta para fazer a consulta : ");
+                        int numer = Convert.ToInt32(Console.ReadLine());
+
+                        cconta = cconta.ConsultaConta(lista, numer);
+                        Boolean Exis;
+                        Exis = Utils.VerificarNumero(numer, lista);
+                        if (Exis)
+                        {
+                            Console.WriteLine(cconta.ToString());
+                            Console.Beep();
+                            Thread.Sleep(3000);
+                            Console.Clear();
+                        }
                         break;
                     case 4:
-                        // código 2
+                        Conta sconta = new Conta();
+                        Console.WriteLine("Digite o Numero da conta para fazer o saque : ");
+                        int num = Convert.ToInt32(Console.ReadLine());
+                        sconta = sconta.ConsultaConta(lista, num);
+                        Boolean verify = Utils.VerificarNumero(num, lista);
+                        if (verify)
+                        {
+                            
+                            if (sconta.Saldo1 > 0)
+                            {
+                                sconta.Sacar(sconta);
+                                lista.Remove(lista[sconta.Id1]);
+                                lista.Add(sconta);
+                            }
+                            else
+                            {
+                                Console.WriteLine("Saldo insulficiente !!!");
+                                Console.Beep();
+                                Thread.Sleep(3000);
+                            }
+                        }
+                        Console.Clear();
                         break;
+                    case 5:
+                        Conta dconta = new Conta();
+                        Console.WriteLine("Digite o Numero da conta para fazer o depósito : ");
+                        int nu = Convert.ToInt32(Console.ReadLine());
+                        dconta = dconta.ConsultaConta(lista, nu);
+                        Boolean verificar = Utils.VerificarNumero(nu, lista);
+                        if (verificar)
+                        {
+
+                            if (dconta.Saldo1 > 0)
+                            {
+                                dconta.Depositar(dconta);
+                                lista.Remove(lista[dconta.Id1]);
+                                lista.Add(dconta);
+                            }
+                            else
+                            {
+                                
+                            }
+                        }
+                        Console.Clear();
+                        break;
+                       
+                        
+
                 }
-                Console.Clear();
             }
         }
+        
         private static string[] Inicio()
         {
             string Nome;
